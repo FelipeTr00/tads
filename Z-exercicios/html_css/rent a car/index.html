@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent a Car</title>
+    <meta name="description" content="Site do aplicativo Rent a Car de Boa Esperança - PR">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!--Íncone-->
+    <link rel="shortcut icon" href="images/icone.png">
+    <!-- icones do font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--Animações-->
+    <link rel="stylesheet" href="css/aos.css">
+    <!--Lightbox-->
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <!--Style-->
+    <link rel="stylesheet" href="css/style.css">
+
+    
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" title="Home" class="header-logo">
+            <img src="images/logo.png" alt="Rent a Car">
+        </a>
+
+        <a href="javascript:mostrarMenu()" title="Menu" class="header-menu">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+
+        <nav class="header-nav">
+            <ul>
+                <li>
+                    <a href="index.html" title="Home">
+                        <i class="fa-solid fa-house-chimney">
+                            PÁGINA INICIAL</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="quemsomos.html" title="Quem Somos">
+                        <i class="fa-solid fa-magnifying-glass">
+                            Quem Somos
+                        </i>
+                    </a>
+                </li>
+                <li>
+                    <a href="aplicativo.html" title="Aplicativo">
+                        <i class="fa-solid fa-mobile-screen-button">
+                            Aplicativo
+                        </i>
+                    </a>
+                </li>
+                <li>
+                    <a href="contato.html" title="Contato">
+                        <i class="fa-solid fa-envelope">
+                            Contato
+                        </i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div class="flex">
+            <div class="flex-col">
+                <h2>Quer locar um carro?</h2>
+                <p>Utilize o Rent a Car</p>
+                <p>
+                    <a href="aplicativo.html" title="Saiba mais"
+                    class="btn">
+                        <i class="fa-solid fa-search"></i>
+                    Saiba mais
+                    </a>
+                </p> 
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function mostrarMenu() {
+        let menu = document.querySelector(".header-nav");
+        //seleciona e troca a classe
+        menu.classList.toggle("show");
+
+        }
+    </script>
+</body>
+</html>

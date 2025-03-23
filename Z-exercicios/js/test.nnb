@@ -1,0 +1,23 @@
+{
+    "cells": [
+        {
+            "language": "javascript",
+            "source": [
+                "console.log(\"a\");\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "a",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 18px Inter, Arial;
+    color: #333;
+}
+
+.header {
+    background: #FFF;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0 10px #CCC;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.header .header-logo img {
+    width: 280px;
+}
+
+.header .header-menu {
+    border: 0.5px solid #333;
+    padding: 10px;
+    color: #333
+    text-decoration: none;
+    float: right;
+    margin-top: 12px;
+    border-radius: 20%;
+}
+
+.header .header-nav ul li a{
+    color: #666;
+    margin: 20px;
+    text-decoration: none;
+    line-height: 2;
+}
+
+.header .header-nav ul {
+    list-style: none;
+}
+
+.header .header-nav {
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
+
+.banner {
+    background: url(../images/top.jpg) bottom;
+    min-height: 650px;
+}
+
+.banner h2, .banner p {
+    color: orangered;
+}
+
+.banner .flex {
+    text-align: center;
+    padding-top: 200px;
+    line-height: 1.5;
+}
+
+.btn {
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 26px;
+}
+
+
+/* REGRAS PARA TAMANHOS DE TELAS DIFERENTES */
+
+@media (min-width: 460px) {
+    .header .header-menu {
+        display: none;
+    }
+
+    .header .header-nav, .desktop {
+        display: block;
+    }
+
+
+.header .header-nav {
+    float: right;
+}
+
+.header .header-nav ul li {
+    display: inline-block;
+}
+.flex {
+    text-align: left;
+    display: flex;
+}
+}
