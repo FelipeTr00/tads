@@ -1,0 +1,87 @@
+# Dependências do Node.js
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Saída de compilação do TypeScript
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# Arquivos de ambiente e configuração local
+.env
+.env.test
+.env.production
+.env.local
+.env.*.local
+
+# Configurações do editor e IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs e caches
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+*.log
+*.gz
+lerna-debug.log
+.npm/
+
+# Cobertura de testes
+coverage/
+*.lcov
+
+# Arquivos de testes e snapshots
+*.spec.ts
+*.test.ts
+jest.config.js
+jest.config.ts
+__tests__/
+__mocks__/
+__snapshots__/
+
+# Arquivos do Docker
+docker-compose.override.yml
+
+# Configuração de ferramentas
+.nyc_output/
+eslintcache
+.stylelintcache
+.cache/
+
+# Relatórios de erros
+error.log
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Diretórios do Next.js, Nuxt.js e outros frameworks
+.next/
+.nuxt/
+out/
+.svelte-kit/
+
+# Arquivos do Prisma (se aplicável)
+prisma/migrations/
+prisma/*.db
+
+# Playwright e Cypress (se aplicável)
+playwright-report/
+cypress/screenshots/
+cypress/videos/
+
+# MacOS e arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de CI/CD temporários
+*.tgz
+*.cache

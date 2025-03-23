@@ -1,0 +1,17 @@
+services:
+  mysql:
+    image: mysql:latest
+    container_name: game
+    environment:
+      MYSQL_ROOT_PASSWORD: 123
+      MYSQL_DATABASE: game
+      MYSQL_USER: user
+      MYSQL_PASSWORD: 123
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./dba.sql:/docker-entrypoint-initdb.d/dba.sql
+
+volumes:
+  mysql-data:
